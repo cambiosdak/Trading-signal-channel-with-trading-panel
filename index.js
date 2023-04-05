@@ -9,7 +9,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
 const port = 3000;
-const allowedChannel = -1111111111 // replace with your desired channel name or ID
+const allowedChannel = -1111111111 // replace with your desired channel name or ID, this ID is also used for Crypto Channel
 const forexChannel = -1111111111// replace with your desired channel name or ID
 const stockChannel = -11111111111 // replace with your desired channel name or ID
 app.use(bodyParser.urlencoded({ extended: false }));
