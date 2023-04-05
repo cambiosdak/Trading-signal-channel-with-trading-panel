@@ -14,3 +14,5 @@ Install packages via npm:
 ```
 npm install telegraf bitget-api telegraf-session-local crypto-js axios express body-parser
 ```
+- Set your TOKEN API provided by @BotFather in ``main.js`` file
+- 
