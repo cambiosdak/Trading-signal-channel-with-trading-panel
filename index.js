@@ -9,6 +9,9 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
 const port = 3000;
+const allowedChannel = -1111111111 // replace with your desired channel name or ID
+const forexChannel = -1111111111// replace with your desired channel name or ID
+const stockChannel = -11111111111 // replace with your desired channel name or ID
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text());
 let url = 'https://fapi.binance.com'
@@ -66,7 +69,6 @@ bot.command('bitget', (ctx) =>{
 })
 let text
 bot.on('forward_date', async (ctx) => { 
-    const allowedChannel = -1001774094104 // replace with your desired channel name or ID
     const forwardedFrom = ctx.message.forward_from_chat
     if (forwardedFrom && forwardedFrom.type === 'channel' && forwardedFrom.id === allowedChannel) {
         // do something with the forwarded message
@@ -1134,7 +1136,7 @@ app.post('/webhook', (req, res) => {
     // Handle webhook logic here
     let data = req.body
     if (data.includes('Crypto')){
-        ctx.telegram.sendMessage(-1001774094104, req.body, {
+        ctx.telegram.sendMessage(allowedChannel, req.body, {
             reply_markup: {
                 inline_keyboard:[
                     [
@@ -1148,7 +1150,7 @@ app.post('/webhook', (req, res) => {
         })
         res.sendStatus(200)        
     } else if (data.includes('Forex')){
-        ctx.telegram.sendMessage(-1001663209308, req.body, {
+        ctx.telegram.sendMessage(forexChannel, req.body, {
             reply_markup: {
                 inline_keyboard:[
                     [
@@ -1162,7 +1164,7 @@ app.post('/webhook', (req, res) => {
         })
         res.sendStatus(200)        
     } else if (data.includes('Acciones')){
-        ctx.telegram.sendMessage(-1001670482133 , req.body, {
+        ctx.telegram.sendMessage( stockChannel, req.body, {
             reply_markup: {
                 inline_keyboard:[
                     [
