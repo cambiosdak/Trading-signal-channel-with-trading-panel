@@ -15,4 +15,16 @@ Install packages via npm:
 npm install telegraf bitget-api telegraf-session-local crypto-js axios express body-parser
 ```
 - Set your TOKEN API provided by @BotFather in ``main.js`` file
-- 
+- Set your Channel IDs
+- Run your app and send the command ``/listen`` in your bot
+- ``/help`` will give you a list of commands to use the bot.
+
+# References
+- [Axios](https://www.npmjs.com/package/axios)
+- [Crypto-js](https://www.npmjs.com/package/crypto-js)
+- [ws(WebSocket)](https://www.npmjs.com/package/ws)
+- [Telegraf](https://www.npmjs.com/package/telegraf)
+- [ngrok](https://ngrok.com/)
+- [Express](https://www.npmjs.com/package/express)
+- [Telegraf Session](https://www.npmjs.com/package/telegraf-session-local)
+- [Bitget API](https://www.npmjs.com/package/bitget-api)
