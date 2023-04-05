@@ -7,3 +7,10 @@ Another feature is that the user can resend a signal from the channel and bot wi
 
 > This telegram bot supports BITGET and BINANCE Exchanges
 
+# Usage
+- Download [ngrok](https://ngrok.com/) and install
+- Create a tunnel using ```ngrok http 3000``` <br /> <br />
+Install packages via npm:
+```
+npm install telegraf bitget-api telegraf-session-local crypto-js axios express body-parser
+```
