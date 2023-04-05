@@ -9,9 +9,6 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
 const port = 3000;
-const allowedChannel = -1111111111 // replace with your desired channel name or ID
-const forexChannel = -1111111111// replace with your desired channel name or ID
-const stockChannel = -11111111111 // replace with your desired channel name or ID
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text());
 let url = 'https://fapi.binance.com'
@@ -24,7 +21,7 @@ const localSession = new LocalSession({
       deserialize: (str) => JSON.parse(str),
     },
   })  
-const bot = new Telegraf('6048703008:AAHKtxqfvr8aI30ZRw7tRUXWB-bqg_4qygw');
+const bot = new Telegraf('YOUR TOKEN GOES HERE'); // SET YOUR BOT TOKEN
 // 
 // Register session middleware
 bot.use(localSession.middleware())
