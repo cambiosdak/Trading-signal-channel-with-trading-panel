@@ -1,0 +1,85 @@
+{
+  "sessions": [
+    {
+      "id": "968783758:968783758",
+      "data": {
+        "__scenes": {
+          "current": "cancelBitgetOrder",
+          "state": {}
+        },
+        "apiKeyBitmex": "3D0mh7U7GvzPTq0cEASLDAUe",
+        "apiSecretBitmex": "Thqw6HJYBdGYNjYDM89Y2R4JAEFcVB8oitr4ZB_OooIEtZOk",
+        "apiKey": "asdasd",
+        "apiSecret": "asdasd",
+        "apiKeyBitget": "/cancelar",
+        "apiSecretBitget": "/cancelar",
+        "apiBitgetPhrase": "/cancelar"
+      }
+    },
+    {
+      "id": "-1001782979100:968783758",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "144789127:144789127",
+      "data": {
+        "__scenes": {
+          "current": "cancelBitgetOrder",
+          "state": {}
+        },
+        "apiKey": "P469Dlqi7xfLlP7ViCYh3Cb1XVc1klOMzlzguqOvYlE49qpVeMDbh8GNNdBqIQm9",
+        "apiSecret": "d6RDFpmfqZ3cVB9D2bxPKxyEH1zmS1MSt0anNO46zPb1jJv3gnKaV6y72Nrmpp12",
+        "apiKeyBitget": "bg_6413c2d091ce7d73874167f0ec08b930",
+        "apiSecretBitget": "df319a31d06debb471a6c56ccc609b7d784e7c5f0865ecda59682763414f9b68",
+        "apiBitgetPhrase": "Pacoherpe1"
+      }
+    },
+    {
+      "id": "-1001733970380:968783758",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001663209308:144789127",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "-1001670482133:144789127",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1618869105:1618869105",
+      "data": {
+        "__scenes": {
+          "current": "apiKeyScene",
+          "state": {}
+        }
+      }
+    },
+    {
+      "id": "5369187512:5369187512",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "5890545040:5890545040",
+      "data": {
+        "__scenes": {}
+      }
+    },
+    {
+      "id": "1899031441:1899031441",
+      "data": {
+        "__scenes": {}
+      }
+    }
+  ]
+}
