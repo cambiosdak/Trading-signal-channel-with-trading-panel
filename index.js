@@ -8,7 +8,7 @@ const symbols = require('./symbols.json')
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
-const port = 3000;
+const port = 3000; // You can change the port if you are already using it, make sure it matches with the ngrok port you are using
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.text());
 let url = 'https://fapi.binance.com'
@@ -21,7 +21,7 @@ const localSession = new LocalSession({
       deserialize: (str) => JSON.parse(str),
     },
   })  
-const bot = new Telegraf('6048703008:AAHKtxqfvr8aI30ZRw7tRUXWB-bqg_4qygw');
+const bot = new Telegraf('YOUR TOKEN GOES HERE'); // SET YOUR BOT TOKEN
 // 
 // Register session middleware
 bot.use(localSession.middleware())
